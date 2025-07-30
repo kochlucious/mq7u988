@@ -29,6 +29,10 @@
             max-width: 600px;
             width: 100%;
         }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
         h1 {
             font-size: 24px;
             margin-bottom: 15px;
@@ -40,19 +44,21 @@
         .countdown {
             font-size: 28px;
             margin-top: 20px;
-            color: #d08702;
+            color: #ffc500;
             font-weight: bold;
         }
         a {
-            color: #d08702;
+            color: #ffc500;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
 
-        /* 手机版样式 */
         @media (max-width: 480px) {
+            .logo {
+                max-width: 150px;
+            }
             h1 {
                 font-size: 20px;
             }
@@ -67,14 +73,16 @@
 </head>
 <body>
     <div class="container">
+        <img src="./vietwin88.png" alt="VietWin88" class="logo">
         <h1>Đang chuyển đến trang đích...</h1>
-        <p>Nếu trang không tự động chuyển hướng, vui lòng <a href="https://www.vietwin88.vip/Signup/UAXQUGKSZ">bấm vào đây</a></p>
-        <div class="countdown" id="countdown">3</div>
+        <p>Nếu trang không tự động chuyển hướng, </p>
+<p>vui lòng <a href="https://www.vietwin88.vip/Signup/UAXQUGKSZ">bấm vào đây</a></p>
+        <div class="countdown" id="countdown">2</div>
     </div>
 
     <script>
         // Hiệu ứng đếm ngược
-        var countdown = 3;
+        var countdown = 2;
         var element = document.getElementById('countdown');
         
         var timer = setInterval(function() {
