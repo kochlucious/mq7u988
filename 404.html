@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Không Tìm Thấy Trang - Lỗi 404</title>
+    <style>
+        body {
+            background-color: #212529;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #d08702;  /* 修改为橙色 */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #e89c10;  /* 悬停时稍亮的橙色 */
+        }
+        .countdown {
+            color: #f8f9fa;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.</p>
+        <p>Bạn sẽ được tự động chuyển hướng về <a href="https://vietwin888.com/">trang chủ</a> trong <span class="countdown">3</span> giây...</p>
+        <p>Nếu không tự động chuyển hướng, vui lòng <a href="https://vietwin888.com/">nhấn vào đây</a>.</p>
+    </div>
+
+    <script>
+        // Countdown and redirect
+        var seconds = 3;
+        var countdownElement = document.querySelector('.countdown');
+        
+        var countdown = setInterval(function() {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.href = "https://vietwin888.com/";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
