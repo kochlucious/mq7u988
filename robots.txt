@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /login.html
+
+Sitemap: https://vietwin888.com/sitemap.xml
