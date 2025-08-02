@@ -516,7 +516,7 @@ a {
 
 a:hover {
 	color: #f7eb72;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 img {
