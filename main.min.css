@@ -26,7 +26,7 @@ a {
 body #a6685618956 {
 	font-size: 14px;
 	font-family: sans-serif;
-	background-color: #212529;
+	background-color: #000;
 }
 
 picture {
@@ -102,7 +102,7 @@ img {
 }
 
 #a6685618956.a695261691 .navbar-container[data-v-7a7156162] {
-	background-color: #212529;
+	background-color: #000;
 	color: #242424;
 }
 
@@ -1278,6 +1278,6 @@ button:not(:disabled) {
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
-	background-color: #212529;
+	background-color: #000;
 	color: #fff;
 }
