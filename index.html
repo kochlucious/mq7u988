@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="vi">
    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="VietWin88">
+      <meta name="language" content="vi">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="VietWin88 | Trang cá cược trực tuyến uy tín | Thể thao & Casino">
       <title>VietWin88 | Trang cá cược trực tuyến uy tín | Thể thao & Casino</title>
       <meta name="description" content="VietWin88 cung cấp trải nghiệm cá cược thể thao, casino trực tuyến và slot game hấp dẫn. Giao diện mượt mà, bảo mật an toàn, khuyến mãi lớn mỗi ngày.">
@@ -14,580 +14,554 @@
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
       <link rel="icon" type="image/x-icon" href="./favicon.ico">
       <link rel="manifest" href="./site.webmanifest">
-      <link href="./main.min.css" rel="stylesheet">
-      <meta name="google-site-verification" content="GvyrapAigZl_G4heGGObHgp10-gSgksdwH3L1ckEVG8" />
-      <script type="application/ld+json">
-         {
-           "@context": "https://schema.org",
-           "@type": "WebSite",
-           "name": "VietWin88",
-           "description": "VietWin88 cung cấp trải nghiệm cá cược thể thao, casino trực tuyến và slot game hấp dẫn. Giao diện mượt mà, bảo mật an toàn, khuyến mãi lớn mỗi ngày.",
-           "alternateName": "VietWin88",
-           "url": "https://vietwin888.com/"
-         }          
-      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+         /* Global Styles */
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Arial', sans-serif;
+         }
+         body {
+         background-color: #f8f9fa;
+         color: #333;
+         }
+         a {
+         text-decoration: none;
+         color: #e39f0b;
+         }
+         .container {
+         width: 100%;
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 15px;
+         }
+         .btn {
+         display: inline-block;
+         padding: 10px 20px;
+         background: linear-gradient(60deg, #e39f0b, #f7eb72, #d08702);
+         color: black;
+         border-radius: 4px;
+         font-weight: bold;
+         transition: all 0.3s ease;
+         }
+         .btn:hover {
+         background-color: #810102;
+         transform: translateY(-2px);
+         }
+         /* Navigation - Desktop */
+         .navbar {
+         background-color: #000;
+         color: white;
+         padding: 15px 0;
+         position: fixed;
+         width: 100%;
+         top: 0;
+         z-index: 1000;
+         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+         }
+         .navbar .container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .logo img {
+         height: 40px; 
+         width: auto;  
+         transition: transform 0.3s ease; 
+         }
+         .logo img:hover {
+         transform: scale(1.05);
+         }
+         .nav-right {
+         display: flex;
+         align-items: center;
+         gap: 15px;
+         }
+         .language-selector {
+         display: flex;
+         gap: 0;
+         background: rgba(255, 255, 255, 0.1);
+         border-radius: 30px;
+         padding: 3px;
+         border: 1px solid rgba(255, 255, 255, 0.2);
+         backdrop-filter: blur(5px);
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+         }
+         .language-selector a {
+         padding: 8px 20px;
+         border-radius: 30px;
+         font-weight: 600;
+         transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+         color: rgba(255, 255, 255, 0.8);
+         position: relative;
+         text-align: center;
+         font-size: 14px;
+         }
+         .language-selector a.active {
+         background: linear-gradient(60deg, #e39f0b, #f7eb72, #d08702);
+         color: black;
+         box-shadow: 0 4px 8px rgba(195, 0, 1, 0.3);
+         transform: scale(1.05);
+         }
+         .language-selector a:not(.active):hover {
+         background: rgba(255, 255, 255, 0.15);
+         color: white;
+         }
+         /* Hero Section */
+         .hero {
+         height: 100vh;
+         background-color: #0f0000;
+         background-image: url(./bg.png);
+         color: white;
+         display: flex;
+         align-items: center;
+         margin-top: 60px;
+         position: relative;
+         overflow: hidden;
+         }
+         .hero .container {
+         display: flex;
+         align-items: center;
+         height: 100%;
+         }
+         .hero-content {
+         flex: 1;
+         padding-right: 40px;
+         z-index: 2;
+         }
+         .hero-image {
+         flex: 1;
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         z-index: 2;
+         }
+         .hero-image img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 8px;
+         }
+         .hero h1 {
+         font-size: 48px;
+         margin-bottom: 20px;
+         line-height: 1.2;
+         }
+         .hero p {
+         font-size: 20px;
+         margin-bottom: 30px;
+         opacity: 0.9;
+         }
+         /* Games Section */
+         .games-section {
+         padding: 80px 0;
+         background-color: #0f0000;
+         background-image: url(./bg.png);
+         }
+         .section-title {
+         text-align: center;
+         margin-bottom: 50px;
+         }
+         .section-title h2 {
+         font-size: 36px;
+         color: #f7eb72;
+         }
+         .games-grid {
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         gap: 20px;
+         margin-bottom: 50px;
+         }
+         .game-card {
+         border-radius: 8px;
+         overflow: hidden;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+         transition: transform 0.3s ease;
+         }
+         .game-card:hover {
+         transform: translateY(-10px);
+         }
+         .game-card img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         }
+         .game-info {
+         padding: 15px;
+         }
+         .game-info h3 {
+         margin-bottom: 10px;
+         font-size: 18px;
+         }
+         /* Content after games grid */
+         .games-content {
+         text-align: center;
+         max-width: 800px;
+         margin: 0 auto;
+         }
+         .games-content h1 {
+         font-size: 32px;
+         margin-bottom: 20px;
+         color: #1a1a2e;
+         }
+         .games-content h2 {
+         font-size: 28px;
+         margin: 30px 0 15px;
+         color: #f7eb72;
+         }
+         .games-content p {
+         font-size: 18px;
+         line-height: 1.6;
+         margin-bottom: 20px;
+         color: #fff;
+         }
+         /* Features Section */
+         .features {
+         padding: 80px 0;
+         background-color: #0f0000;
+         background-image: url(./bg.png);
+         }
+         .features-grid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 30px;
+         }
+         .feature-card {
+         text-align: center;
+         padding: 30px 20px;
+         background: linear-gradient(60deg, #e39f0b, #f7eb72, #d08702);
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+         }
+         .feature-icon {
+         font-size: 40px;
+         color: #000;
+         margin-bottom: 20px;
+         }
+         .feature-card h3 {
+         margin-bottom: 15px;
+         font-size: 22px;
+         }
+         /* Footer */
+         footer {
+         background-color: #000;
+         color: white;
+         padding: 10px 0 20px;
+         }
+         .footer-content {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 30px;
+         margin-bottom: 40px;
+         }
+         .footer-column h3 {
+         font-size: 18px;
+         margin-bottom: 20px;
+         position: relative;
+         padding-bottom: 10px;
+         }
+         .footer-column h3::after {
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 40px;
+         height: 2px;
+         background-color: #c30001;
+         }
+         .footer-links {
+         list-style: none;
+         }
+         .footer-links li {
+         margin-bottom: 10px;
+         }
+         .footer-links a {
+         transition: color 0.3s ease;
+         }
+         .footer-links a:hover {
+         color: #c30001;
+         }
+         .social-links {
+         display: flex;
+         gap: 15px;
+         margin-top: 20px;
+         }
+         .social-links a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 40px;
+         height: 40px;
+         background-color: rgba(255, 255, 255, 0.1);
+         border-radius: 50%;
+         transition: all 0.3s ease;
+         }
+         .social-links a:hover {
+         background-color: #c30001;
+         transform: translateY(-3px);
+         }
+         .footer-bottom {
+         text-align: center;
+         padding-top: 20px;
+         border-top: 1px solid rgba(255, 255, 255, 0.1);
+         font-size: 14px;
+         }
+         /* Mobile Styles */
+         @media (max-width: 992px) {
+         .games-grid {
+         grid-template-columns: repeat(3, 1fr);
+         }
+         .features-grid {
+         grid-template-columns: repeat(2, 1fr);
+         }
+         .footer-content {
+         grid-template-columns: repeat(2, 1fr);
+         }
+         /* Modified hero section for mobile */
+         .hero .container {
+         flex-direction: column;
+         justify-content: flex-start;
+         text-align: center;
+         padding-top: 40px;
+         }
+         .hero-image {
+         order: -1;
+         margin-bottom: 40px;
+         justify-content: center;
+         }
+         .hero-content {
+         padding-right: 0;
+         }
+         }
+         @media (max-width: 768px) {
+         .games-grid {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         grid-auto-flow: column;
+         gap: 15px;
+         }
+         .features-grid {
+         grid-template-columns: 1fr;
+         }
+         .footer-content {
+         grid-template-columns: 1fr;
+         }
+         .hero h1 {
+         font-size: 36px;
+         }
+         .hero p {
+         font-size: 18px;
+         }
+         }
+         @media (max-width: 576px) {
+         .games-grid {
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(5, 2fr);
+         grid-auto-flow: column;
+         }
+         .hero h1 {
+         font-size: 30px;
+         }
+         .nav-right {
+         gap: 10px;
+         }
+         .language-selector a {
+         padding: 8px 16px;
+         font-size: 14px;
+         }
+         .login-btn {
+         padding: 8px 16px;
+         font-size: 14px;
+         }
+         }
+      </style>
    </head>
    <body>
-      <div data-v-7a945193409="" id="app">
-         <div data-v-7a945193409="" id="a6685618956" class="a695261691 a69531983">
-            <div data-v-7a2359685="">
-               <div data-v-7a36941561="" data-v-7a2359685="" class="bg">
-               </div>
-               <div data-v-7a2359685="" class="container p-0 overflow-x-hidden">
-                  <div data-v-7a7156162="" data-v-7a2359685="" class="navbar-height lobby">
-                     <div data-v-7a7156162="" class="navbar-container fixed-top w-100 navbar-height">
-                        <div data-v-7a7156162="" class="container h-100">
-                           <div data-v-7a7156162="" class="row align-items-center h-100 no-gutters">
-                              <div data-v-7a7156162="" class="col text-center">
-                                 <a href="https://vietwin888.com/"><img src="./vietwin88.png" class="logo-img" alt="VietWin88" width="120" height="50"></a>
-                              </div>
-                              <div data-v-7a7156162="" class="col">
-                                 <div data-v-7a7156162="" class="d-flex flex-row justify-content-end align-items-center">
-                                    <div data-v-7a7156162="">
-                                       <div class="top-bar">
-                                          <a href="./login" target="_blank" class="login-button" style="font-weight: bold;">Đăng Nhập</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div data-v-7a956141731="" data-v-7a2359685="" id="carouselExampleIndicators" data-ride="carousel" class="carousel slide banner-carousel pointer-event">
-                     <div data-v-7a956141731="" class="carousel-inner">
-                        <div data-v-7a956141731="" class="carousel-item active">
-                           <picture>
-                              <source srcset="./175294706474.gif" media="(max-width: 468px)">
-                              <source srcset="./175294706474.gif">
-                              <a href="./login" target="_blank"><img src="./175294706474.gif" class="w-100 cursor-pointer" alt="Display" width="1280" height="400"></a>
-                           </picture>
-                        </div>
-                     </div>
-                  </div>
-                  <div data-v-7a1517396="" data-v-7a2359685="">
-                     <div data-v-7a1517396="" class="balance-card text-center">
-                        <div data-v-7a1517396=""><img src="./alert.png" width="32" height="32" alt="alert"> <span class="alert">Đăng nhập Mở khóa tất cả tính năng</span></div>
-                     </div>
-                  </div>
-                  <div data-v-7a1517396="" data-v-7a2359685="" class="d-flex px-4 my-3">
-                     <div data-v-7a1517396="" class="balance-card text-center">
-                        <div data-v-7a1517396="" class="d-flex">
-                           <div data-v-7a1517396="" class="balance">
-                              <div data-v-7a1517396="" class="balance-name">
-                                 V-Point
-                              </div>
-                              <div data-v-7a1517396="" class="balance-value">
-                                 0.00
-                              </div>
-                           </div>
-                           <div data-v-7a1517396="" class="balance ml-3">
-                              <div data-v-7a1517396="" class="balance-name">
-                                 V-Chips
-                              </div>
-                              <div data-v-7a1517396="" class="balance-value">
-                                 0.00
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div data-v-7a1517396="" class="wallet-card ml-3">
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                        <span> </span>
-                        <div data-v-7a1517396="" class="wallet-btn">
-                           <a href="./login" target="_blank" class="text-signup">
-                           <img data-v-7a1517396="" src="./invite.png" alt="signup">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div data-v-7a05651889="" data-v-7a2359685="" class="wrap">
-                     <div data-v-7a039684165="" data-v-7a05651889="" class="filter-container type-filter">
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg"></div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./info.png" class="type-icon" alt="info">
-                              <div data-v-7a039684165="" class="filter-text">Info
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg"></div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./hot.png" class="type-icon" alt="Popular game">
-                              <div data-v-7a039684165="" class="filter-text">Popular
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item active">
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./all.png" class="type-icon" alt="Vietwin88">
-                              <div data-v-7a039684165="" class="filter-text">All
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./slot.png" class="type-icon" alt="slot game">
-                              <div data-v-7a039684165="" class="filter-text">Slots
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./live.png" class="type-icon" alt="Live game">
-                              <div data-v-7a039684165="" class="filter-text">Live
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./sports.png" class="type-icon" alt="Sports">
-                              <div data-v-7a039684165="" class="filter-text">Sports
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./lottery.png" class="type-icon" alt="Lottery">
-                              <div data-v-7a039684165="" class="filter-text">Lottery
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./fishing.png" class="type-icon" alt="Fishing Game">
-                              <div data-v-7a039684165="" class="filter-text">Fishing
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./cockfight.png" class="type-icon" alt="Cockfight">
-                              <div data-v-7a039684165="" class="filter-text">Cockfight
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a039684165="" class="filter-item">
-                           <div data-v-7a039684165="" class="bg">
-                           </div>
-                           <div data-v-7a039684165="" class="d-flex align-items-center">
-                              <img data-v-7a039684165="" src="./horseracing.png" class="type-icon" alt="Horse Racing">
-                              <div data-v-7a039684165="" class="filter-text">Horse racing
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div data-v-7a05651889="" class="row no-gutters vendor-list row-cols-3 row-cols-md-5">
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./pragmaticplay-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./pragmaticplay-logo.png" width="200" height="200" class="vendor-icon" alt="Pragmatic Play Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./tiger9-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./tiger9-logo.png" width="200" height="200" class="vendor-icon" alt="Tiger 9 Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./yb-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./yb-logo.png" width="200" height="200" class="vendor-icon" alt="YB Live Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./aesexy-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./aesexy-logo.png" width="200" height="200" class="vendor-icon" alt="AE Sexy Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./dreamgaming-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./dreamgaming-logo.png" width="200" height="200" class="vendor-icon" alt="Dreamgaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./sa-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./sa-logo.png" width="200" height="200" class="vendor-icon" alt="SA Live Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./ibcbet-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./ibcbet-logo.png" width="200" height="200" class="vendor-icon" alt="IBC Bet Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./nolimit-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./nolimit-logo.png" width="200" height="200" class="vendor-icon" alt="Nolimit City Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./relax-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./relax-logo.png" width="200" height="200" class="vendor-icon" alt="Relax Gaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./pg-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./pg-logo.png" width="200" height="200" class="vendor-icon" alt="PG Soft Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./spadegaming-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./spadegaming-logo.png" width="200" height="200" class="vendor-icon" alt="Spadegaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./bgaming-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./bgaming-logo.png" width="200" height="200" class="vendor-icon" alt="BGaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./lfc888-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./lfc888-logo.png" width="200" height="200" class="vendor-icon" alt="LFC888 Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./jdb-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./jdb-logo.png" width="200" height="200" class="vendor-icon" alt="JDB Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./tfgaming-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./tfgaming-logo.png" width="200" height="200" class="vendor-icon" alt="TF Gaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./jili-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./jili-logo.png" width="200" height="200" class="vendor-icon" alt="Jili Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./pegasus-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./pegasus-logo.png" width="200" height="200" class="vendor-icon" alt="Pegasus Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./cq9-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./cq9-logo.png" width="200" height="200" class="vendor-icon" alt="CQ9 Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./habanero-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./habanero-logo.png" width="200" height="200" class="vendor-icon" alt="Habanero Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./fachai-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./fachai-logo.png" width="200" height="200" class="vendor-icon" alt="Fa Chai Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./creativegaming-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./creativegaming-logo.png" width="200" height="200" class="vendor-icon" alt="Creative Gaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./nextspin-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./nextspin-logo.png" width="200" height="200" class="vendor-icon" alt="Next Spin Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./netent-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./netent-logo.png" width="200" height="200" class="vendor-icon" alt="Net Ent Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./redtiger-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./redtiger-logo.png" width="200" height="200" class="vendor-icon" alt="Red Tiger Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./spribe-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./spribe-logo.png" width="200" height="200" class="vendor-icon" alt="Spribe Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./dragoonsoft-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./dragoonsoft-logo.png" width="200" height="200" class="vendor-icon" alt="Dragoon Soft Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./bigtimegaming-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./bigtimegaming-logo.png" width="200" height="200" class="vendor-icon" alt="Big Time Gaming Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./endorphina-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./endorphina-logo.png" width="200" height="200" class="vendor-icon" alt="Endorphina Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./yggdrasil-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./yggdrasil-logo.png" width="200" height="200" class="vendor-icon" alt="Yggdrasil Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div data-v-7a05651889="" class="col p-1">
-                           <div data-v-7e6b6157="" data-v-7a05651889="">
-                              <div data-v-7e6b6157="" class="vendor-container">
-                                 <div data-v-7e6b6157="" class="vendor-item mx-auto cursor-pointer">
-                                    <picture>
-                                       <source srcset="./vpower-logo.png" media="(max-width: 468px)">
-                                       <img data-v-7e6b6157="" src="./vpower-logo.png" width="200" height="200" class="vendor-icon" alt="VPower Logo">
-                                    </picture>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div data-v-7a2359685="">
-                  </div>
-                  <div class="container" data-v-7a96513261="">
-                     <h1>VietWin | Website chính thức</h1>
-                     <p><a href="https://vietwin888.com/"><b>VietWin</b></a> là nền tảng cá cược trực tuyến hàng đầu Việt Nam, cung cấp đa dạng các sản phẩm cá cược. Chúng tôi cam kết mang đến một môi trường cá cược an toàn và thân thiện với người dùng, hướng đến mục tiêu trở thành nền tảng cá cược đáng tin cậy nhất của bạn. Sản phẩm của chúng tôi bao gồm sòng bạc trực tuyến, cá cược thể thao, trò chơi xèng. Chúng tôi hợp tác với các nhà cung cấp trò chơi hàng đầu như Nolimit City, Relax Gaming, Pragmatic Play, IBCBET và Yeebet Live để đảm bảo bạn có trải nghiệm chơi game tốt nhất. Với các phương thức gửi và rút tiền đa dạng, việc quản lý tiền của bạn trở nên thuận tiện hơn. Chúng tôi cung cấp dịch vụ hỗ trợ khách hàng 24/7. </p>
-                     <p>Bạn có thể liên hệ với chúng tôi bất cứ lúc nào qua trò chuyện trực tiếp hoặc WhatsApp để được hỗ trợ nhanh chóng và chuyên nghiệp. Tại VietWin, quyền riêng tư của khách hàng là ưu tiên hàng đầu của chúng tôi. Thông tin cá nhân của bạn sẽ được bảo mật và bảo vệ nghiêm ngặt, không bao giờ tiết lộ cho bên thứ ba, cho phép bạn tận hưởng trải nghiệm chơi game một cách an tâm. Cảm ơn bạn đã chọn VietWin làm nền tảng cá cược trực tuyến của mình!</p>
-                     <h2>VietWin cung cấp những chương trình khuyến mãi và tiền thưởng nào?</h2>
-                     <p>Thành viên mới nhận được tiền thưởng 288% cho lần nạp tiền đầu tiên.</p>
-                     <p>Thưởng nạp tiền cuối tuần 20%</p>
-                     <p>Tiền thưởng cứu hộ hàng tuần hoàn trả 5% số tiền thua lỗ</p>
-                     <p>Nạp tiền 3 ngày liên tiếp nhận 88.000</p>
-                     <p>Nạp tiền 5 ngày liên tiếp nhận 188.000</p>
-                     <p>Nạp tiền 7 ngày liên tiếp nhận 388.000</p>
-                     <h2>Cách đăng ký tài khoản VietWin</h2>
-                     <p>Để giúp người dùng đăng ký tài khoản VietWin dễ dàng hơn, vui lòng nhấp vào trang Đăng ký . </p>
-                     <h2>Quay Slot Game</h2>
-                     <p>Giải phóng tiềm năng chiến thắng của bạn với VietWin Slots! Lựa chọn từ danh sách đa dạng các trò chơi slot hấp dẫn được cung cấp bởi Pragmatic Play, LFC888, NoLimit và Relax Gaming. Với tỷ lệ RTP cao và các tính năng thú vị, cơ hội trúng thưởng lớn luôn ở ngay trước mắt. Quay ngay và bắt đầu chiến thắng lớn!</p>
-                     <h2>Chúc vui vẻ LIVE</h2>
-                     <p>Trải nghiệm cảm giác chơi game thời gian thực đỉnh cao với VietWin Live. Chơi các trò chơi kinh điển như baccarat, blackjack, roulette, rồng hổ và sic bo từ các nhà cung cấp hàng đầu như Yeebet, AE Sexy, DreamGaming và Tiger9. Tận hưởng sự phấn khích của sòng bạc trực tiếp mọi lúc, mọi nơi mà không cần rời khỏi nhà. Tham gia bàn chơi và chơi ngay hôm nay!</p>
-                     <h2>Cá cược SPORTS &amp; E-SPORTS</h2>
-                     <p>Đặt cược vào các môn thể thao yêu thích với VietWin Sports, hỗ trợ đội bóng yêu thích của bạn! Dù là bóng đá, cầu lông, đua ngựa, thể thao điện tử hay bất kỳ sự kiện lớn nào, VietWin đều có đối tác IBCbet hỗ trợ bạn. Đặt cược thông minh, thắng lớn và tận hưởng các chương trình khuyến mãi thể thao độc quyền.</p>
-                     <h2>Chơi trên iOS, Android hoặc PC – Không cần ứng dụng</h2>
-                     <p>Để truy cập và chơi VietWin, hãy mở trình duyệt và nhập URL <a href="https://vietwin888.com/"><b>vietwin888.com</b></a></p>
-                     <p>Nhấp vào nút đăng nhập trên trang, trò chơi sẽ được tải trong trình duyệt và bắt đầu chơi ngay lập tức.</p>
-                     <br><br><br>
-                     <br><br>
-                  </div>
+      <nav class="navbar" style="padding: 10px 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;">
+         <div class="container">
+            <div class="logo">
+               <img src="./logo.png" alt="VietWin88 Logo" style="height: 40px;">
+            </div>
+            <div class="nav-right">
+               <div class="language-selector">
+                  <a href="./" class="active">Việt</a>
+                  <a href="./" class="">En</a>
                </div>
             </div>
          </div>
-      </div>
-      <div class="footer">
-         Copyright © <a href="https://vietwin888.com/" style="color: inherit; text-decoration: none;">VietWin88</a> All Rights Reserved
-      </div>
+      </nav>
+      <section class="hero">
+         <div class="container">
+            <div class="hero-image" style="
+               margin-bottom: 0px;
+               ">
+               <img src="./viet.png" alt="Showcase">
+            </div>
+            <div class="hero-content">
+               <h1>VietWin88 | Website chính thức</h1>
+               <p>VietWin88 là nền tảng cá cược trực tuyến hàng đầu Việt Nam, cung cấp đa dạng các sản phẩm cá cược. Chúng tôi cam kết mang đến một môi trường cá cược an toàn và thân thiện với người dùng, hướng đến mục tiêu trở thành nền tảng cá cược đáng tin cậy nhất của bạn.</p>
+               <a href="https://www.vietwin88.vip/Signup/UAXQUGKSZ" class="btn" target="_blank">Đăng Nhập</a>
+            </div>
+         </div>
+      </section>
+      <section class="games-section">
+         <div class="container">
+            <div class="section-title">
+               <h2>Trò Chơi Phổ Biến</h2>
+            </div>
+            <div class="games-grid">
+               <div class="game-card">
+                  <img src="./game/AE-logo.png" alt="AE Sexy Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/T9-logo.png" alt="T9 Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/Nolimit-Logo.png" alt="Nolimit Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/JDB-logo.png" alt="JDB Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/Nextspin-logo.png" alt="Next Spin Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/YB-logo.png" alt="YB Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/DG-logo.png" alt="DG Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/BG-logo.png" alt="BG Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/BTG-logo.png" alt="BTG Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/Relax-logo.png" alt="Relax	 Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/SA-logo.png" alt="SA Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/IBC-logo.png" alt="IBC Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/PP-logo.png" alt="PP Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/PG-logo.png" alt="PG Logo">
+               </div>
+               <div class="game-card">
+                  <img src="./game/LFC888-logo.png" alt="LFC888 Logo">
+               </div>
+            </div>
+            <div class="games-content">
+               <h2>VietWin88 là ai?</h2>
+               <p>Sản phẩm của chúng tôi bao gồm sòng bạc trực tuyến, cá cược thể thao, trò chơi xèng. Bạn có thể liên hệ với chúng tôi bất cứ lúc nào qua trò chuyện trực tiếp hoặc WhatsApp để được hỗ trợ nhanh chóng và chuyên nghiệp. Tại <a href="https://vietwin888.com/" ><strong>VietWin88</strong></a>, quyền riêng tư của khách hàng là ưu tiên hàng đầu của chúng tôi. Thông tin cá nhân của bạn sẽ được bảo mật và bảo vệ nghiêm ngặt, không bao giờ tiết lộ cho bên thứ ba, cho phép bạn tận hưởng trải nghiệm chơi game một cách an tâm. Cảm ơn bạn đã chọn VietWin88 làm nền tảng cá cược trực tuyến của mình!</p>
+               <h2>VietWin88 cung cấp những chương trình khuyến mãi và tiền thưởng nào?</h2>
+               <p>Thành viên mới nhận được tiền thưởng <strong style="color:#e39f0b;">288%</strong> cho lần nạp tiền đầu tiên !</p>
+               <p>Thưởng nạp tiền cuối tuần <strong style="color:#e39f0b;">20%</strong></p>
+               <p>Tiền thưởng cứu hộ hàng tuần hoàn trả <strong style="color:#e39f0b;">5%</strong> số tiền thua lỗ</p>
+               <p>Nạp tiền <strong style="color:#e39f0b;">3</strong> ngày liên tiếp nhận <strong style="color:#e39f0b;">88.000₫</strong></p>
+               <p>Nạp tiền <strong style="color:#e39f0b;">5</strong> ngày liên tiếp nhận <strong style="color:#e39f0b;">188.000₫</strong></p>
+               <p>Nạp tiền <strong style="color:#e39f0b;">7</strong> ngày liên tiếp nhận <strong style="color:#e39f0b;">388.000₫</strong></p>
+               <h2>Tùy Chọn Gửi và Rút Tiền</h2>
+               <p>VietWin88 cung cấp nhiều phương thức gửi tiền khác nhau, chẳng hạn như chuyển khoản ngân hàng truyền thống, chuyển khoản tức thời, gửi tiền điện tử USDT.</p>
+               <p>Rút tiền Nếu bạn yêu cầu rút tiền thắng cược, tiền sẽ được chuyển ngay lập tức mà không chậm trễ. Nếu số tiền vượt quá một số tiền nhất định, bạn có thể yêu cầu rút tiền mặt.</p>
+               <h2>Cách đăng ký tài khoản VietWin88</h2>
+               <p> Để giúp người dùng đăng ký tài khoản VietWin88 dễ dàng hơn, vui lòng nhấp vào trang <a href="https://www.vietwin88.vip/Signup/UAXQUGKSZ" target="_blank"><strong>Đăng ký</strong></a>.</p>
+               <h2>Quay Slot Game</h2>
+               <p>Giải phóng tiềm năng chiến thắng của bạn với VietWin88 Slots! Lựa chọn từ danh sách đa dạng các trò chơi slot hấp dẫn được cung cấp bởi Pragmatic Play, LFC888, NoLimit và Relax Gaming. Với tỷ lệ RTP cao và các tính năng thú vị, cơ hội trúng thưởng lớn luôn ở ngay trước mắt. Quay ngay và bắt đầu chiến thắng lớn!</p>
+               <h2>Chúc vui vẻ LIVE</h2>
+               <p>Trải nghiệm cảm giác chơi game thời gian thực đỉnh cao với VietWin88 Live. Chơi các trò chơi kinh điển như baccarat, blackjack, roulette, rồng hổ và sic bo từ các nhà cung cấp hàng đầu như Yeebet, AE Sexy, DreamGaming và Tiger9. Tận hưởng sự phấn khích của sòng bạc trực tiếp mọi lúc, mọi nơi mà không cần rời khỏi nhà. Tham gia bàn chơi và chơi ngay hôm nay!</p>
+               <h2>Cá cược SPORTS & E-SPORTS</h2>
+               <p>Đặt cược vào các môn thể thao yêu thích với VietWin88 Sports, hỗ trợ đội bóng yêu thích của bạn! Dù là bóng đá, cầu lông, đua ngựa, thể thao điện tử hay bất kỳ sự kiện lớn nào, VietWin88 đều có đối tác IBCbet hỗ trợ bạn. Đặt cược thông minh, thắng lớn và tận hưởng các chương trình khuyến mãi thể thao độc quyền.</p>
+            </div>
+         </div>
+      </section>
+      <section class="features">
+         <div class="container">
+            <div class="section-title">
+               <h2>Tại sao chọn chúng tôi</h2>
+            </div>
+            <div class="features-grid">
+               <div class="feature-card">
+                  <div class="feature-icon">
+                     <i class="fas fa-medal"></i>
+                  </div>
+                  <h3>Chất lượng cao</h3>
+                  <p>VietWin88 cung cấp các trò chơi chất lượng cao hàng đầu trong ngành với đồ họa tuyệt đẹp và lối chơi sáng tạo.</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">
+                     <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h3>Phiên bản di động</h3>
+                  <p>Trò chơi HTML5 tương thích với thiết bị di động, tải nhanh ngay cả khi dùng dữ liệu di động. Không cần tải xuống.</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">
+                     <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3>An toàn & đáng tin cậy</h3>
+                  <p>VietWin88 sử dụng công nghệ bảo mật tiên tiến nhất để đảm bảo dữ liệu và giao dịch của người chơi được an toàn.</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">
+                     <i class="fas fa-globe"></i>
+                  </div>
+                  <h3>Hỗ trợ đa ngôn ngữ</h3>
+                  <p>Tiếng Việt & English</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">
+                     <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <h3>Công nghệ đổi mới</h3>
+                  <p>VietWin88 liên tục phát triển công nghệ mới để mang đến cho người chơi những trải nghiệm chơi game chưa từng có.</p>
+               </div>
+               <div class="feature-card">
+                  <div class="feature-icon">
+                     <i class="fas fa-headset"></i>
+                  </div>
+                  <h3>Hỗ trợ chuyên nghiệp</h3>
+                  <p>Đội ngũ hỗ trợ khách hàng chuyên nghiệp 24/7 luôn sẵn sàng giải quyết vấn đề của bạn.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="footer-bottom">
+               <p>© 2025 VietWin88. All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <script>
+         // Navbar scroll effect
+         window.addEventListener('scroll', function() {
+             const navbar = document.querySelector('.navbar');
+             if (window.scrollY > 50) {
+                 navbar.style.padding = '10px 0';
+                 navbar.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
+             } else {
+                 navbar.style.padding = '15px 0';
+                 navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+             }
+         });
+         
+document.querySelectorAll('.language-selector a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.language-selector a.active').classList.remove('active');
+        this.classList.add('active');
+        
+        // Actually navigate to the href location
+        window.location.href = this.getAttribute('href');
+    });
+});
+      </script>
    </body>
 </html>
